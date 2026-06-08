@@ -38,12 +38,9 @@ gpg --decrypt backup_2025-06-15.tar.gz.gpg > backup_recuperado.tar.gz
 ```
 
 > **NOTA IMPORTANTE:**
-> 
-> 
 > NUNCA escribas la contraseña directamente en el script si este archivo va a estar en un lugar compartido. En entornos de producción, usa un gestor de secretos o guarda la contraseña en un archivo con permisos **600** (solo lectura del propietario) en un directorio seguro.
-> 
 
-## **Integración del cifrado en el script de backup**
+## Integración del cifrado en el script de Backup
 
 Cifrado automático al final del script, añadirlo después de crear el **.tar.gz**:
 

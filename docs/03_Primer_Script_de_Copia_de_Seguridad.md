@@ -1,4 +1,4 @@
-# ☝️ 3. Primer Script de Copia de Seguridad
+# ☝️ 03. Primer Script de Copia de Seguridad
 
 Ahora que ya tenemos la base, vamos a crear nuestro primer script de copia de seguridad. Iremos paso a paso, línea por línea y explicando qué hace cada parte. ¡Vamos!
 
@@ -69,8 +69,7 @@ echo "[$(date)] Copia de seguridad completada." >> "$LOG"
 exit 0
 ```
 
-> *Los comentarios (líneas que empiezan con #) son fundamentales, ellos explican cada parte y facilitan el mantenimiento futuro.*
-> 
+> *Los comentarios (líneas que empiezan con **#**) son fundamentales, ellos explican cada parte y facilitan el mantenimiento futuro.*
 
 ## Dar permisos de ejecución
 
@@ -103,11 +102,7 @@ ls -lh /backup/datos/
 ```
 
 > *Deberías ver en el log, algo como:  '[2025-06-15 02:00] ✓ Copia creada: **backup_2025-06-15_02-00.tar.gz**'*
-> 
-> 
 > *En el directorio:  **/backup/datos/**, el **archivo.tar.gz** recién creado con su tamaño.*
-> 
 > *Si ves mensajes de error, vuelve a leer el script y comprueba que las rutas existen.*
-> 
 
 ---

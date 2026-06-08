@@ -1,10 +1,10 @@
-# ✌️ 4. Script Avanzado con Rotación de Copias
+# ✌️ 04. Script Avanzado con Rotación de Copias
 
 ## Análisis del problema
 
 Un script básico tiene un problema importante ***“genera copias indefinidas sin borrar las antiguas”*** y en poco tiempo, **el disco duro estará lleno**. La solución es implementar una política de **rotación de copias**, en pocas palabras, quedarnos con las más recientes, las más antiguas eliminarlas automáticamente.
 
-Creamos el archivo, /opt/scripts/backup/copia_avanzada.sh, con el siguiente contenido:
+Creamos el archivo, **/opt/scripts/backup/copia_avanzada.sh**, con el siguiente contenido:
 
 ```bash
 #!/bin/bash
@@ -77,7 +77,7 @@ exit $ERRORES   # Devuelve 0 si no hubo errores
 
 Vamos a desglosar el script para entenderlo mejor:
 
-**Arrays (listas):** La variable **ORIGENES**=(...) es un array, es decir, una lista de valores. En Bash se accede a todos sus elementos con **${ORIGENES[@]}**. Son muy útiles cuando tienes varios valores del mismo tipo.
+**Arrays (listas):** La variable **ORIGENES=(...)** es un array, es decir, una lista de valores. En Bash se accede a todos sus elementos con **${ORIGENES[@]}**. Son muy útiles cuando tienes varios valores del mismo tipo.
 
 **Funciones:** La función **escribir_log()** es un bloque de código con nombre que podemos llamar tantas veces como queramos. Evita repetir el mismo código en varios sitios (el famoso principio **DRY**: **D**on't **R**epeat **Y**ourself).
 

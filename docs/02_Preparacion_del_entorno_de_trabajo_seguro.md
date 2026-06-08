@@ -1,6 +1,6 @@
-# 🛠️ 2. Preparación del entorno de trabajo seguro
+# 🛠️ 02. Preparación del entorno de trabajo seguro
 
-## **Vamos a preparar el entorno de trabajo seguro**
+## Vamos a preparar el entorno
 
 Previo a crear cualquier script, debemos preparar la estructura de directorios con los permisos correctos. Ejecuta los siguientes comandos en tu terminal:
 
@@ -33,6 +33,6 @@ En Linux los permisos de `r` + `w` + `x`, son representados en octal como 4 + 2 
 - `r--` **= 4** (4+0+0)
 - `---` **= 0** (Sin permisos)
 
-Entonces, ***¿porqué 750 y no 777?***, pues porque el permiso 777 significa que cualquier usuario del sistema puede leer, modificar y ejecutar (`rwxrwxrwx`), sería un enorme riesgo de seguridad. Sin embargo, con el permiso 750 (`rwxr-x---`), el propietario tiene el control total, el grupo puede leer y ejecutar y el resto de usuarios (todos los demás) no pueden ni ver qué hay dentro.
+Entonces, **¿porqué 750 y no 777?**, pues porque el permiso 777 significa que cualquier usuario del sistema puede leer, modificar y ejecutar (`rwxrwxrwx`), sería un enorme riesgo de seguridad. Sin embargo, con el permiso 750 (`rwxr-x---`), el propietario tiene el control total, el grupo puede leer y ejecutar y el resto de usuarios (todos los demás) no pueden ni ver qué hay dentro.
 
 ---

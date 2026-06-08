@@ -1,15 +1,15 @@
-# 📝 1. Conceptos y Herramientas que usaremos
+# 📝 01. Conceptos y Herramientas que usaremos
 
-## **¿Qué aprendemos con esta guía?**
+## ¿Qué aprendemos con esta guía?
 
 - ✅ ¿Qué son las copias de seguridad y por qué son indispensables?
-- ✅ ¿Cómo funcionan los scripts Bash y para qué los usamos?
-- ✅ ¿Cómo comprimir y gestionar archivos con tar y rsync?
-- ✅ ¿Cómo programar tareas automáticas con cron?
+- ✅ ¿Cómo funcionan los scripts **Bash** y para qué los usamos?
+- ✅ ¿Cómo comprimir y gestionar archivos con **tar** y **rsync**?
+- ✅ ¿Cómo programar tareas automáticas con **cron**?
 - ✅ ¿Cómo proteger tus copias con permisos?
 - ✅ Buenas prácticas reales de un administrador de sistemas.
 
-## **¿Qué es una copia de seguridad y por qué importa?**
+## ¿Qué es una copia de seguridad y por qué importa?
 
 **El problema:** Todos sabemos que la información (los datos) son mucho más frágiles de lo que parecen. Un disco dañado, un comando mal escrito, un virus o cualquier error humano, todo puede afectar a la perdida de datos importantes y/o sensibles.
 
@@ -25,7 +25,7 @@
 - **2**: Usa al menos 2 tipos de soporte diferentes (por ejemplo, disco interno y otro externo)
 - **1**: Guarda 1 copia al menos “fuera de la ubicación física” (en la nube, otro lugar, etc)
 
-## **Las herramientas que usaremos**
+## Las herramientas que usaremos
 
 Previamente, debemos conocer las herramientas que tenemos disponibles para ello.
 
@@ -94,26 +94,23 @@ Las instrucciones para “cron” se guardan en un archivo llamado “**crontab*
 */30 * * * * /scripts/comprueba.sh  # Cada 30 minutos
 ```
 
-## **Seguridad y permisos del script**
+## Seguridad y permisos del script
 
 Antes que nada, debemos entender un principio fundamental de la administración de sistemas: **la seguridad no es un añadido, es la base**.
 
 Un script de backup con malos permisos puede ser una puerta abierta para los atacantes.
 
-> **RECORDEMOS, los permisos en Linux (rwx):**
-> 
-> 
-> En Linux, cada archivo tiene tres tipos de permisos: `r` (lectura, read), `w` (escritura, write) y `x` (ejecución, execute). Estos se aplican para tres niveles: el propietario (`u`), el grupo (`g`) y el resto del mundo (`o`).
-> 
+> **RECORDEMOS los permisos en Linux (rwx):**
+> En Linux, cada archivo tiene tres tipos de permisos: **r** (lectura, read), **w** (escritura, write) y **x** (ejecución, execute). Estos se aplican para tres niveles: el propietario (**u**), el grupo (**g**) y el resto del mundo (**o**).
 
-`chmod` ****permite cambiar los permisos de un archivo y se puede usar con notación numérica u octal, ejemplo:
+`chmod` permite cambiar los permisos de un archivo y se puede usar con notación numérica u octal, ejemplo:
 
-| **Número** | **Significado** |
+| Número | Significado |
 | --- | --- |
-| 7 | Lectura + Escritura + Ejecución (rwx): **Permiso total** |
-| 6 | Lectura + Escritura (rw-): **Sin ejecución** |
-| 5 | Lectura + Ejecución (r-x): **Sin escritura** |
-| 4 | Solo Lectura (r--): **El más restrictivo útil** |
-| 0 | Sin ningún permiso (---): **Completamente bloqueado** |
+| 7 | Lectura + Escritura + Ejecución (`rwx`): **Permiso total** |
+| 6 | Lectura + Escritura (`rw-`): **Sin ejecución** |
+| 5 | Lectura + Ejecución (`r-x`): **Sin escritura** |
+| 4 | Solo Lectura (`r--`): **El más restrictivo útil** |
+| 0 | Sin ningún permiso (`---`): **Completamente bloqueado** |
 
 ---

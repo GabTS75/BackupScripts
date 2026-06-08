@@ -1,4 +1,4 @@
-# 💊 9. Buenas Prácticas del Administrador de Sistemas
+# 💊 09. Buenas Prácticas del Administrador de Sistemas
 
 Conocer **comandos** es solo una parte de este “ecosistema”.
 
@@ -34,27 +34,22 @@ tar -xzf /backup/datos/mi_backup_2025-06-15.tar.gz \
 
 Antes de poner en marcha un sistema de backups, sería bueno repasar esta lista:
 
-<aside>
-💡
-
-**Lista de comprobación / Sistema de backups**
-
-☐   Los scripts tienen permisos 750 (solo el propietario puede ejecutarlos).
-
-☐   El directorio de backups tiene permisos 750 o más restrictivos.
-
-☐   Las contraseñas de cifrado están en archivos con permisos 600, no en el script.
-
-☐   El crontab está configurado y los trabajos aparecen en crontab -l.
-
-☐   Los logs se están escribiendo correctamente en cada ejecución.
-
-☐   Se ha probado la restauración de al menos un archivo de backup.
-
-☐   Las notificaciones por email funcionan (se ha recibido un correo de prueba).
-
-☐   Existe al menos una copia en una ubicación diferente al servidor principal.
-
-</aside>
+> 💡 **Lista de comprobación / Sistema de backups**
+>
+> ☐   Los scripts tienen permisos 750 (solo el propietario puede ejecutarlos).
+>
+> ☐   El directorio de backups tiene permisos 750 o más restrictivos.
+>
+> ☐   Las contraseñas de cifrado están en archivos con permisos 600, no en el script.
+>
+> ☐   El crontab está configurado y los trabajos aparecen en crontab -l.
+>
+> ☐   Los logs se están escribiendo correctamente en cada ejecución.
+>
+> ☐   Se ha probado la restauración de al menos un archivo de backup.
+>
+> ☐   Las notificaciones por email funcionan (se ha recibido un correo de prueba).
+>
+> ☐   Existe al menos una copia en una ubicación diferente al servidor principal.
 
 ---

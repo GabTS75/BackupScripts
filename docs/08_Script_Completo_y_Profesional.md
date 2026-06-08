@@ -1,4 +1,4 @@
-# 📌 8. Script Completo y Profesional
+# 📌 08. Script Completo y Profesional
 
 Contiene todo lo anteriormente visto, con explicación línea por línea, recomiendo guardarlo como: `copia_profesional.sh`
 

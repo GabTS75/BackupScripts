@@ -1,4 +1,4 @@
-# 🪄 6. Automatización con cron y crontab
+# 🪄 06. Automatización con cron y crontab
 
 Y llegamos a la parte importante, programarlo para que se ejecute solo, sin intervención nuestra (automatizar).
 
@@ -24,7 +24,7 @@ crontab -r
 
 El formato de cada línea del crontab, **tiene cinco campos de tiempo**, seguidos del comando. Ver la siguiente tabla de referencia completa:
 
-| **Campo** | **Valores válidos / Significado** |
+| Campo | Valores válidos / Significado |
 | --- | --- |
 | Minuto | 0-59 (el minuto exacto en que se ejecuta) |
 | Hora | 0-23 (la hora del día, en formato 24h) |
@@ -36,7 +36,7 @@ El formato de cada línea del crontab, **tiene cinco campos de tiempo**, seguido
 | ,  (coma) | Lista de valores (ej.: 1,3,5 = los días 1, 3 y 5) |
 | -  (guión) | Rango (ej.: 8-17 = desde las 8h hasta las 17h) |
 
-## **Ejemplo de programación crontab**
+## Ejemplo de programación crontab
 
 ```bash
 # ──────────────────────────────────────────────
@@ -63,13 +63,9 @@ El formato de cada línea del crontab, **tiene cinco campos de tiempo**, seguido
 ```
 
 > **IMPORTANTE:**
-> 
-> 
-> En Bash, la salida de un comando va a 'dos canales': la salida estándar (**stdout**, código 1) y la salida de errores (**stderr**, código 2).
-> 
-> El símbolo `>>` redirige la salida estándar al archivo de **log**.
-> 
-> El `2>&1` hace que los errores (**stderr**) vayan al mismo sitio que la salida estándar. Así no se pierden los mensajes de error.
-> 
+>
+> - En **Bash**, la salida de un comando va a 'dos canales': la salida estándar (**stdout**, código 1) y la salida de errores (**stderr**, código 2).
+> - El símbolo `>>` redirige la salida estándar al archivo de **log**.
+> - El `2>&1` hace que los errores (**stderr**) vayan al mismo sitio que la salida estándar. Así no se pierden los mensajes de error.
 
 ---
